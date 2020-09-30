@@ -1,9 +1,14 @@
 {% extends 'base.html' %}
         {% block content %}
+        
         {% for recipe in recipes %}
-            {{recipe.category_name}}
+         <div class="grid-title">
+            {{recipe.category_name}}            
+            
+         </div>
+          <div class="grid-details hidden">
             {{recipe.ingridients}}
             {{recipe.method}}
-                      
+          </div>
         {% endfor %}
 {% endblock %}
